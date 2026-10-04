@@ -15,7 +15,7 @@ concurrency:
 jobs:
   checks:
     name: Линтер и тесты
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
 
     steps:
@@ -39,7 +39,7 @@ jobs:
 
   deploy:
     name: Деплой на VPS
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     needs: checks
     if: github.ref == 'refs/heads/main'
