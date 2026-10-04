@@ -1,0 +1,12 @@
+{
+  "name": "codenzo-demo-ci",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "node --test tests"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  }
+}
